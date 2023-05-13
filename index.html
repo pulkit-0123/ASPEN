@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspen - Virtual Assistant</title>
+
+    <!---- CSS Linkage ------>
+    <link rel="stylesheet" href="style.css">
+
+    <!---- Font Awesome Cdn Linkage ------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <section class="main">
+        <div class="image-container">
+            <div class="image">
+                <img src="ASPEN-2--unscreen.gif" alt="Aspen - Virtual Assistant" style="height:400px ; width:400px">
+            </div>
+            <!-- <h1>A S P E N</h1> -->
+            <p style="font-family: 'Roboto Mono', monospace;">I'm a Virtual Assistant how can I help you?</p>
+        </div>
+        <div class="input">
+            <button class="talk"><i class="fas fa-microphone-alt"></i></button>
+            <h1 class="content">Talk to Aspen</h1>
+        </div>
+        <div class="instruction">
+            <h3> Try voice commands like: <span class="typing" style="color:#fdba00"></span> </h3>
+        </div>
+
+        <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+        
+        <script type="text/javascript">
+              var typed = new Typed('.typing', {
+                strings: ["Climate Bhopal", "Summary of Artificial Intelligence","Tell me a joke","Time right now","Open youtube","Who is Narendra Modi"],
+                typeSpeed: 100,
+                loop:true
+              });
+        </script>
+    <footer class="footer">
+        <div class="social-media-icons">
+            <a href="https://www.facebook.com/facebookIndia/"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/twitterindia"><i class="fab fa-twitter "></i></a>
+            <a href="https://www.instagram.com/india/"><i class="fab fa-instagram "></i></a>
+        </div>
+    </footer>
+    
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li><a href="index.html" id="homeBtn">Home <i class="fa fa-home"></i> &nbsp &nbsp </a></li> 
+            <li><a href="about.html" id="aboutBtn">About Us <i class="fa fa-user"></i>&nbsp &nbsp </a></li>
+            <li><a href="contact.html" id="contactBtn">Contact Us <i class="fa">&#x2709;</i> &nbsp &nbsp </a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+      </nav>
+      
+  
+    </section>
+
+    <!------- Js Linkage --------->
+    <script src="app.js"></script> 
+</body>
+
+</html>

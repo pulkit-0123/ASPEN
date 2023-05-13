@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin-top: 0;
+  }
+  /* .form-container{
+    border: #fff solid 1px;
+    padding: 4px 8px;
+    width: 50%;
+  } */
+  form {
+    max-width: 400px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #0074D9;
+    /* background-color: #ff5361; */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-details {
+    margin-top: 40px;
+  }
+  
+  .contact-details h2 {
+    margin-top: 0;
+  }
+
+  .background-image {
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #4452ee, #1a2938, #121b25, #0a1119);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  /* Style the home button */
+#homeBtn {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    background-color: #0074D9;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 999;
+  }
+  
+  /* Change the home button style on hover */
+  #homeBtn:hover {
+    background-color: #0056b3;
+  }
