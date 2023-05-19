@@ -37,6 +37,11 @@ body {
     cursor: pointer;
   }
   
+  fieldset{
+      background: grey;
+      overflow: hidden;
+      padding:8px 4px
+  }
   .contact-details {
     margin-top: 40px;
   }
