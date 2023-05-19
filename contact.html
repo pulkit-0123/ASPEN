@@ -14,10 +14,18 @@
       details.</p>
     <div class="form-container">
       <form id="contactForm" onSubmit="sendEmail(); reset(); return false;">
-        <input type="text" name="name" placeholder="Name" required>
-        <input type="email" id="email" placeholder="Email" required>
-        <input type="text" name="subject" placeholder="Subject" required>
-        <textarea name="message" placeholder="How can we help you?" required></textarea>
+        <fieldset>
+          <input type="text" name="name" placeholder="Name" required>
+        </fieldset>
+        <fieldset>
+          <input type="email" id="email" placeholder="Email" required>
+        </fieldset>        
+        <fieldset>
+          <input type="text" name="subject" placeholder="Subject" required>
+        </fieldset>  
+        <fieldset>
+          <textarea name="message" placeholder="How can we help you?" required></textarea>
+        </fieldset>
         <button type="submit">Submit</button>
       </form>
     </div>
@@ -28,9 +36,9 @@
       function sendEmail() {
         Email.send({
           Host: "smtp.elasticemail.com",
-          Username: "charscodes@gmail.com",
-          Password: "charscodes###",
-          To: 'charscodes@gmail.com',
+          Username: "your_email",
+          Password: "your_password",
+          To: 'your_email',
           From: document.getElementById("email").value,
           Subject: "This is the subject",
           Body: "And this is the body"
